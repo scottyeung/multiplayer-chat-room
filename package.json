@@ -1,0 +1,35 @@
+{
+    "name": "chatroom-app",
+    "version": "1.0.0",
+    "description": "A multiplayer chatroom app with user login and real-time messaging",
+    "main": "server/index.ts",
+    "scripts": {
+        "start": "bun run server/index.ts",
+        "dev": "bun i && bun --watch server/index.ts",
+        "build": "esbuild client/index.tsx --bundle --outfile=dist/index.js",
+        "client": "esbuild client/index.tsx --bundle --outfile=dist/index.js --servedir=dist --watch"
+    },
+    "dependencies": {
+        "bun": "latest",
+        "concurrently": "latest",
+        "cookie-parser": "latest",
+        "esbuild": "latest",
+        "express": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-router-dom": "latest",
+        "socket.io": "latest",
+        "socket.io-client": "latest",
+        "sqlite": "latest",
+        "sqlite3": "latest"
+    },
+    "devDependencies": {
+        "@types/cookie-parser": "latest",
+        "@types/express": "latest",
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "@types/sqlite3": "latest",
+        "typescript": "latest"
+    }
+}
